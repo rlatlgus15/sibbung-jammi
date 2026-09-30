@@ -62,7 +62,7 @@
       </div>
       <div>
         <h1 class="text-sm sm:text-base font-bold text-white tracking-tight flex items-center gap-1.5">
-          AI 머니로그
+          시뿡 가계부
           <span class="text-[10px] px-1.5 py-0.2 rounded-md bg-indigo-500/20 text-indigo-400 font-medium border border-indigo-500/30">Pro</span>
         </h1>
       </div>
@@ -229,7 +229,7 @@
           </div>
           <div>
             <h3 class="font-bold text-xs sm:text-sm tracking-tight flex items-center gap-1.5">
-              머니봇 (MoneyBot)
+              시뿡봇
               <span class="text-[9px] bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 px-1.5 py-0.2 rounded">Gemini AI</span>
             </h3>
             <p class="text-[10px] text-slate-400">말하듯 적거나 영수증 사진 업로드</p>
@@ -265,7 +265,7 @@
             <i class="fa-solid fa-sparkles"></i>
           </div>
           <div class="bg-[#162032] border border-slate-800 p-3 sm:p-3.5 rounded-2xl chat-bubble-ai text-xs sm:text-sm text-slate-200 shadow-md max-w-[88%] leading-relaxed">
-            반가워요! 당신의 스마트 AI 금융 비서 <strong>머니봇</strong>입니다. 🌙<br><br>
+            반가워요! 당신의 스마트 AI 금융 비서 <strong>시뿡봇</strong>입니다. 🌙<br><br>
             • <em>"오늘 점심 삼계탕 15,000원 결제"</em><br>
             • <em>"월급 3,400,000원 입금됐어"</em><br>
             • <em>카메라 아이콘으로 영수증 촬영</em><br><br>
@@ -995,7 +995,7 @@ create policy "Allow all public access" on transactions for all using (true) wit
         else summaryIncome += Number(i.amount);
       });
 
-      const systemInstruction = `당신은 친절하고 스마트한 대한민국 최고의 AI 개인 재무 비서 '머니봇'입니다.
+      const systemInstruction = `당신은 친절하고 스마트한 대한민국 최고의 AI 개인 재무 비서 '시뿡봇'입니다.
 현재 기준 오늘 날짜는 ${todayISO} 이며, 사용자가 현재 조회 중인 가계부 월은 ${selectedYM} 입니다.
 현재 ${selectedYM}월의 총 지출은 ${summaryExpense.toLocaleString()}원, 총 수입은 ${summaryIncome.toLocaleString()}원 입니다.
 기록된 내역 개수는 ${currentMonthItems.length}건 입니다.
